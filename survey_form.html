@@ -24,17 +24,15 @@
       <div class="horizontal-menu">
         <nav>
           <ul>
-            <li><a href="#">Про нас</a></li>
+            <li><a href="about.html">Про нас</a></li>
             <li><a href="index.html">Магазин</a></li>
             <li><a href="survey_form.html">Акції</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакти</a></li>
+            <li><a href="logistic.html">Доставка</a></li>
+            <li><a href="contact.html">Контакти</a></li>
           </ul>
         </nav>
         <div class="icons">
-          <input type="text" placeholder="Пошук..." />
-          <i class="search-icon">🔍</i>
-          <i class="cart-icon">🛒</i>
+          <button id="view-cart"><i class="cart-icon">🛒</i></button>
         </div>
       </div>
     </header>
@@ -153,10 +151,23 @@
           </form>
         </div>
       </section>
+
+      <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваш кошик</h2>
+            <div id="cart-items"></div>
+            <p id="cart-total">Загальна сума: 0 грн</p>
+            <button id="order-btn">Замовити</button>
+        </div>
+    </div>
+
     </main>
 
     <footer>
       <p>&copy; 2024 ZooWorld</p>
     </footer>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/seacrh.js"></script>
   </body>
 </html>
