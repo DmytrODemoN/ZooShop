@@ -334,6 +334,14 @@ footer {
     background-color: #2ecc71;
 }
 
+.modal #delete-btn {
+  float: right;
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
 /*=======================================*/
 /*              Shop Form                */
 /*=======================================*/
